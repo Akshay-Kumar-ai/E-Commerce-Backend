@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { validate } = require("../../../DevTinder/src/models/user");
+
 
 const userSchema = new mongoose.Schema(
   {
