@@ -19,10 +19,11 @@ const authRouter = require("./src/routes/auth");
 const productRouter = require("./src/routes/product");
 const cartRouter = require("./src/routes/cart");
 const profileRouter = require("./src/routes/profile");
-app.use("/", authRouter);
-app.use("/", productRouter);
-app.use("/", cartRouter);
-app.use("/", profileRouter);
+app.use("/api", authRouter);
+app.use("/api", productRouter);
+app.use("/api", cartRouter);
+app.use("/api", profileRouter);
+
 connectDB()
   .then(() => {
     console.log("DB Connected");
