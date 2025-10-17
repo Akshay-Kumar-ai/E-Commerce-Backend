@@ -26,7 +26,7 @@ app.use("/", profileRouter);
 connectDB()
   .then(() => {
     console.log("DB Connected");
-    app.listen(process.env.PORT_NO, () => console.log("Listening at 8000"));
+    app.listen(process.env.PORT_NO, () => console.log("Listening at 5000"));
   })
   .catch((err) => {
     console.error("DB cannot be connected");
