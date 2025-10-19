@@ -19,10 +19,19 @@ const authRouter = require("./src/routes/auth");
 const productRouter = require("./src/routes/product");
 const cartRouter = require("./src/routes/cart");
 const profileRouter = require("./src/routes/profile");
+const paymentRouter = require("./src/routes/payment");
+const orderRouter = require("./src/routes/orders");
 app.use("/api", authRouter);
 app.use("/api", productRouter);
 app.use("/api", cartRouter);
 app.use("/api", profileRouter);
+app.use("/api", paymentRouter);
+app.use("/api", orderRouter);
+
+// app.use("/api/auth", authRouter);
+// app.use("/api/products", productRouter);
+// app.use("/api/cart", cartRouter);
+// app.use("/api/profile", profileRouter);
 
 connectDB()
   .then(() => {

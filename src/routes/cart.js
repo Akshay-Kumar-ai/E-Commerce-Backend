@@ -4,6 +4,7 @@ const Cart = require("../models/cart");
 const Product = require("../models/product");
 // const product = require("../models/product");
 const { userAuth } = require("../middlewares/auth");
+const ProductPayment = require("../models/productPayment");
 
 cartRouter.post("/addtocart", userAuth, async (req, res) => {
   try {
